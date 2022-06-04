@@ -21,7 +21,7 @@ Em seguida, precisamos executar a API com o **JsonServer** com o seguinte comand
 $ npm run start:database
 ```
 
-Depois que a API estiver em execução, precisamos executar o start do frontend com o seguinte comando:
+Depois que a API estiver em execução, precisamos executar o start do front-end com o seguinte comando:
 ```Bash
 $ npm run start:app
 ```
