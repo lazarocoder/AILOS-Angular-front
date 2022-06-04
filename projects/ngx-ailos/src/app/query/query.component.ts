@@ -23,7 +23,7 @@ export class QueryComponent implements OnInit {
   public pessoa$: Observable<IPessoa> = this._store.pessoa$;
 
   /**
-   * CONSTRUCTOR OF PARAM
+   * CONSTRUCTOR AND PARAM
    * @param _formBuilder: FormBuilder
    * @param _store: QueryStore
    * @param _breadcrumbService: NgxBreadcrumbService
@@ -50,17 +50,11 @@ export class QueryComponent implements OnInit {
     this._breadcrumbService.add('query-breadcrumb', 'Consulta', '/query', 1);
   }
 
-  /**
-   * Reset query component
-   */
   reset(): void {
     this.form.reset();
     this._store.reset();
   }
 
-  /**
-   * Submit
-   */
   submit(): void {
     const cpf: string = this.form.get('cpf')?.value;
     if (validate(cpf)) {
@@ -75,9 +69,6 @@ export class QueryComponent implements OnInit {
     }
   }
 
-  /**
-   * Método responsável pela verificação do CPF, se o mesmo existe nos registros
-   */
   private checkResultSearch(): void {
     let error = false;
     this._store.notify$.subscribe(() => {

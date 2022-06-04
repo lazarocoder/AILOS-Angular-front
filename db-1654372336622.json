@@ -1,0 +1,109 @@
+{
+  "pessoas": [
+    {
+      "id": 1,
+      "nome": "Pedro Malta",
+      "idade": 41,
+      "cpf": "33846466911",
+      "data_nasc": "1981-03-07",
+      "sexo": false,
+      "email": "pedromalta@gmail.com",
+      "situacao": true,
+      "conta": {
+        "id": 1,
+        "numero": "1622218-8",
+        "agencia": "1280",
+        "instituicao": "Itaú"
+      },
+      "filiacao": {
+        "id": 1,
+        "mae": "Francisca Maria",
+        "pai": "Francisco Malta"
+      },
+      "endereco": {
+        "id": 1,
+        "cep": "60730-230",
+        "logradouro": "Rua Joaquim dos anjos",
+        "numero": 200,
+        "bairro": "Vila Velha",
+        "cidade": "Fortaleza",
+        "estado": "CE"
+      },
+      "telefones": {
+        "id": 1,
+        "fixo": "(85) 2730-7203",
+        "celular": "(85) 98580-9840"
+      }
+    },
+    {
+      "id": 2,
+      "nome": "Francisco Santos",
+      "idade": 34,
+      "cpf": "81211137787",
+      "data_nasc": "1987-11-06",
+      "sexo": true,
+      "email": "francisoSantos34@gmail.com",
+      "situacao": false,
+      "conta": {
+        "id": 2,
+        "numero": "1151200-5",
+        "agencia": "3841",
+        "instituicao": "Bradesco"
+      },
+      "filiacao": {
+        "id": 2,
+        "mae": "Maria Celia",
+        "pai": "Pedro Santos"
+      },
+      "endereco": {
+        "id": 2,
+        "cep": "60780-145",
+        "logradouro": "Avenida Luiz Carneiro",
+        "numero": 500,
+        "bairro": "Flores",
+        "cidade": "Barreiras",
+        "estado": "CE"
+      },
+      "telefones": {
+        "id": 2,
+        "fixo": "(85) 4971-3833",
+        "celular": "(85) 98900-1090"
+      }
+    },
+    {
+      "id": 3,
+      "nome": "Fernando  Malta",
+      "idade": 80,
+      "cpf": "989.715.896-04",
+      "data_nasc": "1941-05-20",
+      "sexo": true,
+      "email": "fernandomalta@gmail.com",
+      "situacao": true,
+      "conta": {
+        "id": 3,
+        "numero": "70057-1",
+        "agencia": "1380",
+        "instituicao": "Itaú Life"
+      },
+      "filiacao": {
+        "id": 3,
+        "mae": "Gisele",
+        "pai": "Joaquim Santos Malta"
+      },
+      "endereco": {
+        "id": 3,
+        "cep": "65100-400",
+        "logradouro": "Rua Savia",
+        "numero": 419,
+        "bairro": "Santina",
+        "cidade": "Fortaleza",
+        "estado": "CE"
+      },
+      "telefones": {
+        "id": 3,
+        "fixo": "(85) 2630-1645",
+        "celular": "(85) 99680-4416"
+      }
+    }
+  ]
+}
