@@ -1,0 +1,208 @@
+{
+  "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
+  "version": 1,
+  "newProjectRoot": "projects",
+  "projects": {
+    "ngx-ailos": {
+      "projectType": "application",
+      "schematics": {
+        "@schematics/angular:component": {
+          "style": "scss"
+        },
+        "@schematics/angular:application": {
+          "strict": true
+        }
+      },
+      "root": "projects/ngx-ailos",
+      "sourceRoot": "projects/ngx-ailos/src",
+      "prefix": "app",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-angular:browser",
+          "options": {
+            "outputPath": "dist/app-ngx-ailos/dist",
+            "index": "projects/ngx-ailos/src/index.html",
+            "main": "projects/ngx-ailos/src/main.ts",
+            "polyfills": "projects/ngx-ailos/src/polyfills.ts",
+            "tsConfig": "projects/ngx-ailos/tsconfig.app.json",
+            "aot": true,
+            "assets": [
+              "projects/ngx-ailos/src/favicon.ico",
+              "projects/ngx-ailos/src/assets"
+            ],
+            "styles": [
+              "projects/ngx-ailos/src/styles.scss"
+            ],
+            "scripts": []
+          },
+          "configurations": {
+            "production": {
+              "fileReplacements": [
+                {
+                  "replace": "projects/ngx-ailos/src/environments/environment.ts",
+                  "with": "projects/ngx-ailos/src/environments/environment.prod.ts"
+                }
+              ],
+              "optimization": true,
+              "outputHashing": "all",
+              "sourceMap": false,
+              "namedChunks": false,
+              "extractLicenses": true,
+              "vendorChunk": false,
+              "buildOptimizer": true,
+              "budgets": [
+                {
+                  "type": "initial",
+                  "maximumWarning": "500kb",
+                  "maximumError": "1mb"
+                },
+                {
+                  "type": "anyComponentStyle",
+                  "maximumWarning": "2kb",
+                  "maximumError": "4kb"
+                }
+              ]
+            }
+          }
+        },
+        "serve": {
+          "builder": "@angular-devkit/build-angular:dev-server",
+          "options": {
+            "browserTarget": "ngx-ailos:build"
+          },
+          "configurations": {
+            "production": {
+              "browserTarget": "ngx-ailos:build:production"
+            }
+          }
+        },
+        "extract-i18n": {
+          "builder": "@angular-devkit/build-angular:extract-i18n",
+          "options": {
+            "browserTarget": "ngx-ailos:build"
+          }
+        },
+        "test": {
+          "builder": "@angular-builders/jest:run",
+          "options": {
+            "polyfills": ["projects/ngx-ailos/src/polyfills.ts"],
+            "tsConfig": "projects/ngx-ailos/tsconfig.spec.json",
+            "assets": [
+              "projects/ngx-ailos/src/favicon.ico",
+              "projects/ngx-ailos/src/assets"
+            ],
+            "styles": [
+              "projects/ngx-ailos/src/styles.scss"
+            ],
+            "scripts": []
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "projects/ngx-ailos/tsconfig.app.json",
+              "projects/ngx-ailos/tsconfig.spec.json",
+              "e2e/tsconfig.json"
+            ],
+            "exclude": [
+              "**/node_modules/**"
+            ]
+          }
+        },
+        "e2e": {
+          "builder": "@angular-devkit/build-angular:protractor",
+          "options": {
+            "protractorConfig": "e2e/protractor.conf.js",
+            "devServerTarget": "ngx-ailos:serve"
+          },
+          "configurations": {
+            "production": {
+              "devServerTarget": "ngx-ailos:serve:production"
+            }
+          }
+        }
+      }
+    },
+    "@ailos-lib/ngx-component": {
+      "projectType": "library",
+      "root": "projects/ailos-lib/ngx-component",
+      "sourceRoot": "projects/ailos-lib/ngx-component/src",
+      "prefix": "ngx",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-angular:ng-packagr",
+          "options": {
+            "tsConfig": "projects/ailos-lib/ngx-component/tsconfig.lib.json",
+            "project": "projects/ailos-lib/ngx-component/ng-package.json"
+          },
+          "configurations": {
+            "production": {
+              "tsConfig": "projects/ailos-lib/ngx-component/tsconfig.lib.prod.json"
+            }
+          }
+        },
+        "test": {
+          "builder": "@angular-builders/jest:run",
+          "options": {
+            "tsConfig": "projects/ailos-lib/ngx-component/tsconfig.spec.json"
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "projects/ailos-lib/ngx-component/tsconfig.lib.json",
+              "projects/ailos-lib/ngx-component/tsconfig.spec.json"
+            ],
+            "exclude": [
+              "**/node_modules/**"
+            ]
+          }
+        }
+      }
+    },
+    "@ailos-lib/ngx-api": {
+      "projectType": "library",
+      "root": "projects/ailos-lib/ngx-api",
+      "sourceRoot": "projects/ailos-lib/ngx-api/src",
+      "prefix": "ngx",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-angular:ng-packagr",
+          "options": {
+            "tsConfig": "projects/ailos-lib/ngx-api/tsconfig.lib.json",
+            "project": "projects/ailos-lib/ngx-api/ng-package.json"
+          },
+          "configurations": {
+            "production": {
+              "tsConfig": "projects/ailos-lib/ngx-api/tsconfig.lib.prod.json"
+            }
+          }
+        },
+        "test": {
+          "builder": "@angular-builders/jest:run",
+          "options": {
+            "tsConfig": "projects/ailos-lib/ngx-api/tsconfig.spec.json"
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "projects/ailos-lib/ngx-api/tsconfig.lib.json",
+              "projects/ailos-lib/ngx-api/tsconfig.spec.json"
+            ],
+            "exclude": [
+              "**/node_modules/**"
+            ]
+          }
+        }
+      }
+    }
+  },
+  "cli": {
+    "analytics": "013a6c68-c0fb-4937-841d-a94be50ea630"
+  },
+  "defaultProject": "ngx-ailos"
+}
