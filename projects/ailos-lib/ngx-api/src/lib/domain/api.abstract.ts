@@ -32,7 +32,7 @@ export abstract class AbstractAPI<T> {
   }
 
   /**
-   * Método responsável por buscar entidade da api com objeto genérico
+   * Método responsável por buscar entidade da api com objeto de forma genérica
    * @param params?: HttpParams
    * @template U objeto abstrato de retorno
    * @returns
@@ -42,7 +42,7 @@ export abstract class AbstractAPI<T> {
   }
 
   /**
-   * Método responsável por buscar uma lista de entidades da api com objeto genérico
+   * Método responsável por buscar uma lista de entidades na api com objeto de forma genérica
    * @param params?: HttpParams
    * @template U objeto abstrato de retorno
    * @returns
@@ -52,7 +52,7 @@ export abstract class AbstractAPI<T> {
   }
 
   /**
-   * Envia um post para api com objeto genérico
+   * Envia um post para api com objeto de forma genérica
    * @param entity: Entity
    * @param params?: HttpParams
    * @template U objeto abstrato de retorno
@@ -63,7 +63,7 @@ export abstract class AbstractAPI<T> {
   }
 
   /**
-   * Envia um put para api com objeto genérico
+   * Envia um put para api com objeto de forma genérica
    * @param entity: Entity
    * @param params?: HttpParams
    * @template U objeto abstrato de retorno
@@ -85,7 +85,7 @@ export abstract class AbstractAPI<T> {
   }
 
   /**
-   * Envia um delete para api
+   * Envia um delete para a api
    * @param params?: HttpParams
    * @returns
    */

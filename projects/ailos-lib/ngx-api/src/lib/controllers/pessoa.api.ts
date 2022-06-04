@@ -10,7 +10,7 @@ import { AbstractAPI } from '../domain/api.abstract';
 })
 export class PessoaAPI extends AbstractAPI<IPessoa> {
 
-  /*protected*/ url = 'http://localhost:3000/pessoas';
+  protected url = 'http://localhost:3000/pessoas';
 
   /**
    * CONSTRUCTOR
