@@ -1,12 +1,10 @@
-
-
 {
   "pessoas": [
     {
       "id": 1,
       "nome": "Pedro Malta",
       "idade": 41,
-      "cpf": "66841043057",
+      "cpf": "33846466911",
       "data_nasc": "1981-03-07",
       "sexo": false,
       "email": "pedromalta@gmail.com",
@@ -41,7 +39,7 @@
       "id": 2,
       "nome": "Francisco Santos",
       "idade": 34,
-      "cpf": "99843807006",
+      "cpf": "81211137787",
       "data_nasc": "1987-11-06",
       "sexo": true,
       "email": "francisoSantos34@gmail.com",
@@ -76,7 +74,7 @@
       "id": 3,
       "nome": "Fernando  Malta",
       "idade": 80,
-      "cpf": "83851303067",
+      "cpf": "989.715.896-04",
       "data_nasc": "1941-05-20",
       "sexo": true,
       "email": "fernandomalta@gmail.com",

@@ -62,8 +62,6 @@
 
   }
 
-  // Tabs navigation
-
   var total = document.querySelectorAll('.nav-pills');
 
   total.forEach(function (item, i) {
