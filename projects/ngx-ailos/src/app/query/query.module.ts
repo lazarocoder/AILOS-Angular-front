@@ -6,7 +6,7 @@ import { QueryComponent } from './query.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { IConfig, NgxMaskModule } from 'ngx-mask';
 import { NgxSkeletonLoaderModule } from 'ngx-skeleton-loader';
-//import { NgxPeopleModule } from '@ailos-lib/ngx-component';
+
 
 const maskConfig: Partial<IConfig> = {
   validation: true

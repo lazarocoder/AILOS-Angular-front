@@ -169,10 +169,6 @@
     return e.target || e.srcElement;
   }
 
-
-
-
-
   function sidebarColor(a) {
     var parent = a.parentElement.children;
     var color = a.getAttribute("data-color");

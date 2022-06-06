@@ -13,7 +13,7 @@ module.exports = (req, res, next) => {
             return _send.call(this, '{}', 404)
           }
         }
-      } catch (e) {}
+      } catch (e) { }
     }
     return _send.call(this, body)
   }
