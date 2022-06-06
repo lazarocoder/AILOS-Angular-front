@@ -1,6 +1,6 @@
 # AILOS - Teste
 
-> Angular 11+, JsonServer, Bootstrap
+> Angular 11+, JsonServer, Bootstrap e angular Material
 
 ## Índice
 * [Intuíto](#intuito)
